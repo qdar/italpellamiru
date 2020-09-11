@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('.menu_toggle').click(function(e){
-		$('.menu').toggleClass('open');
+	$('.it_nav').click(function(e){
+		$('.it_nav').toggleClass('open');
 		$('body').toggleClass('hidden');
 		e.preventDefault();
 	});

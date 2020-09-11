@@ -90,11 +90,60 @@ a {
   text-decoration: none;
   position: relative;
 }
+.it_cart {
+  padding: 20px;
+}
+.it_nav {
+  padding: 30px;
+}
+.it_nav_line {
+  position: relative;
+  left: -10px;
+}
+.it_nav_line::before, .it_nav_line::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  transition: all 0.3s;
+}
+.it_nav_line::before {
+  top: -4px;
+}
+.it_nav_line::after {
+  top: 4px;
+}
+.it_nav.open .it_nav_line::before {
+  top: 0px;
+  -webkit-transform: rotate(45deg) translateZ(0);
+  transform: rotate(45deg) translateZ(0);
+}
+.it_nav.open .it_nav_line::after {
+  top: 0px;
+  -webkit-transform: rotate(-45deg) translateZ(0);
+  transform: rotate(-45deg) translateZ(0);
+}
+.it_nav_panel {
+  opacity: 0;
+  visibility: hidden;
+  background: #23212D;
+  width: 100%;
+  height: calc(100% - 60px);
+  position: absolute;
+  left: 0;
+  top: 60px;
+  transition: all 0.3s;
+}
+.it_nav.open + .it_nav_panel {
+  opacity: 1;
+  visibility: visible;
+}
 /* general */
 header {
   background: #23212D;
   height: 60px;
-  color: #fff;
 }
 .wrapper {
   width: 100%;
