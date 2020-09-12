@@ -175,6 +175,14 @@ a {
 .smart_menu {
   margin-top: 20px;
 }
+.header_smart {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+main {
+  margin-top: 60px;
+}
 /* general */
 header {
   background: #23212D;
