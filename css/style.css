@@ -140,11 +140,6 @@ a {
   opacity: 1;
   visibility: visible;
 }
-.it_nav_panel h4 {
-  color: #fff;
-  margin: 0;
-  padding: 0 20px;
-}
 .search {
   height: 50px;
   background: #CABA9F;
@@ -163,15 +158,21 @@ a {
   background: transparent;
   border: 0;
 }
-.smart_menu {
+.panel_content {
   padding: 0 20px;
+  color: #fff;
+}
+.panel_content a {
+  color: #fff;
+}
+.panel_content h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.smart_menu {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.smart_menu a {
-  color: #fff;
-}
-
 /* general */
 header {
   background: #23212D;
