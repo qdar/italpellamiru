@@ -140,6 +140,38 @@ a {
   opacity: 1;
   visibility: visible;
 }
+.it_nav_panel h4 {
+  color: #fff;
+  margin: 0;
+  padding: 0 20px;
+}
+.search {
+  height: 50px;
+  background: #CABA9F;
+  padding: 0 20px;
+}
+.search input {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #23212D;
+}
+.search button {
+  background: transparent;
+  border: 0;
+}
+.smart_menu {
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.smart_menu a {
+  color: #fff;
+}
+
 /* general */
 header {
   background: #23212D;
