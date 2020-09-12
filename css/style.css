@@ -161,9 +161,6 @@ a {
 .panel_content {
   padding: 0 20px;
   color: #f9f9f9;
-  flex-direction: column;
-  justify-content: space-between;
-  height: calc(100% - 60px);
 }
 .panel_content a {
   color: #f9f9f9;
@@ -171,6 +168,10 @@ a {
 .panel_content h4 {
   font-size: 18px;
   margin: 0;
+}
+.panel_contact {
+  position: absolute;
+  bottom: 20px;
 }
 .smart_menu {
   margin-top: 20px;
