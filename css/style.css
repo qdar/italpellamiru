@@ -54,18 +54,7 @@ aside {
 }
 /* padding */
 .offset {
-  padding-top: 85px;
-  padding-bottom: 35px;
-  margin-bottom: 55px;
-}
-.offset.offset_bg {
-  padding-bottom: 0px;
-}
-.offset.offset_product {
-  padding-top: 35px;
-}
-.offset_content {
-  margin: 35px 0;
+  margin: 15px 0;
 }
 /* title */
 h1, h2 {
@@ -89,6 +78,26 @@ a {
   color: #2d2d2d;
   text-decoration: none;
   position: relative;
+}
+.regular_button {
+  font-size: 14px;
+  padding: 12px 22px;
+  background: #caba9f;
+  border: 1px solid #caba9f;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-width: 200px;
+  width: 200px;
+  text-align: center;
+  display: block;
+}
+.regular_button:hover {
+  background: #23212d;
+  color: #fff;
+}
+.white_button {
+  background: #fff;
 }
 .it_cart {
   padding: 20px;
@@ -192,4 +201,20 @@ header {
 .wrapper {
   width: 100%;
   padding: 0 5%;
+}
+.home {
+  height: auto;
+  background: #caba9f;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  padding: 75px 0;
+}
+.home h1 {
+  font-size: 34px;
+  line-height: 1;
+}
+.transition {
+  transition: all 0.3s;
 }
