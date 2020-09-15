@@ -54,7 +54,7 @@ aside {
 }
 /* padding */
 .offset {
-  margin: 15px 0;
+  margin: 25px 0;
 }
 /* title */
 h1, h2 {
@@ -71,7 +71,7 @@ h3 {
   font-size: 16px;
 }
 .title {
-  background: #ede5e3;
+  
 }
 /* a */
 a {
@@ -91,8 +91,10 @@ a {
   width: 200px;
   text-align: center;
   display: block;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
 .regular_button:hover {
+  border: 1px solid #23212d;
   background: #23212d;
   color: #fff;
 }
@@ -189,6 +191,8 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
 main {
   margin-top: 60px;
@@ -197,6 +201,9 @@ main {
 header {
   background: #23212D;
   height: 60px;
+}
+section {
+  padding-top: 45px;
 }
 .wrapper {
   width: 100%;
@@ -217,4 +224,32 @@ header {
 }
 .transition {
   transition: all 0.3s;
+}
+.item {
+  width: 100%;
+  background: #caba9f;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+  display: block;
+  font-size: 14px;
+}
+.item span {
+  height: 120px;
+  display: block;
+  overflow: hidden;
+}
+.responsive {
+  width: 100%;
+}
+/* columns */
+.columns {
+  flex-wrap: wrap;
+}
+.two_forall {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.two_forall:nth-child(2n) {
+  margin-right: 0;
 }
