@@ -2,7 +2,7 @@
 * {-o-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
 body {
   color: #23212D;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
@@ -62,16 +62,13 @@ h1, h2 {
   font-weight: 600;
 }
 h1 {
-  font-size: 24px;
+  font-size: 26px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 h3 {
   font-size: 16px;
-}
-.title {
-  
 }
 /* a */
 a {
@@ -80,14 +77,11 @@ a {
   position: relative;
 }
 .regular_button {
-  font-size: 14px;
   padding: 12px 22px;
   background: #caba9f;
   border: 1px solid #caba9f;
   border-radius: 25px;
-  text-transform: uppercase;
   font-weight: 700;
-  min-width: 200px;
   width: 200px;
   text-align: center;
   display: block;
@@ -100,6 +94,7 @@ a {
 }
 .white_button {
   background: #fff;
+  font-size: 16px;
 }
 .it_cart {
   padding: 20px;
@@ -141,7 +136,7 @@ a {
   visibility: hidden;
   background: #23212D;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 120px);
   position: absolute;
   left: 0;
   top: 60px;
@@ -231,7 +226,6 @@ section {
   text-align: center;
   box-shadow: 0 1px 4px rgba(0,0,0,.1);
   display: block;
-  font-size: 14px;
 }
 .item span {
   height: 120px;
@@ -240,6 +234,15 @@ section {
 }
 .responsive {
   width: 100%;
+}
+.pattern {
+  background-image: url(../img/400.svg);
+  padding-bottom: 45px;
+}
+.box {
+  padding: 25px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
 /* columns */
 .columns {
