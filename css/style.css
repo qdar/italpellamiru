@@ -86,7 +86,7 @@ a {
 .regular_button {
   padding: 12px 22px;
   background: #caba9f;
-  border: 1px solid #caba9f;
+  border: 0;
   border-radius: 25px;
   font-weight: 700;
   width: 200px;
@@ -95,7 +95,6 @@ a {
   box-shadow: 0 1px 4px rgba(0,0,0,.1);
 }
 .regular_button:hover {
-  border: 1px solid #23212d;
   background: #23212d;
   color: #fff;
 }
@@ -298,7 +297,7 @@ header {
 .pattern {
   padding-bottom: 45px;
   background-size: 70px auto;
-  background-image: url(../img/pattern.svg);
+  background-image: url(../img/pattern_test.svg);
 }
 .box {
   padding: 25px;
