@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
 </head>
 <body>
-	<header class="flex align_vc space_between header_smart">
+	<header class="flex align_vc space_between header_nav header_smart">
 		<div class="it_nav">
 			<div class="it_nav_line"></div>
 		</div>
@@ -45,6 +45,29 @@
 			<img src="img/shopping-cart.svg" height="20" alt="">
 		</div>
 	</header>
+	<header class="align_vc header_nav header_nbook">
+		<div class="wrapper flex">
+			<div class="logo">
+				<img src="img/logo.svg" height="30" alt="">
+			</div>
+			<nav class="main_nav flex space_between">
+				<ul class="menu flex align_vc">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Распрадажа</a></li>
+					<li><a href="#">Консолидация</a></li>
+					<li class="hide_item"><a href="#">Оплата и Доставка</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакы</a></li>
+				</ul>
+				<ul class="shop_icon flex align_vc">
+					<li><a href="#"><img src="img/search1.svg" height="20" alt=""></a></li>
+					<li><a href="#"><img src="img/user.svg" height="20" alt=""></a></li>
+					<li><a href="#"><img src="img/shopping-cart.svg" height="20" alt=""></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<main>
 		<section class="home">
 			<div class="wrapper">
@@ -53,53 +76,53 @@
 				<a href="#" class="regular_button white_button transition">Каталог</a>
 			</div>
 		</section>
-		<section>
+		<section class="offet_section">
 			<div class="wrapper">
 				<h2 class="title">Выберите назначение кожи</h2>
 				 <div class="leather_line offset flex columns">
-				 	<div class="two_forall">
+				 	<div class="two_forall transform">
 				 		<a href="#" class="purpose_item">
-				 			<div class="overlay">
+				 			<div class="purpose_image over_image">
 				 				<img src="img/for_obuf.jpg" class="responsive" alt="">
 				 			</div>
 				 			Для обуви
 				 		</a>
 				 	</div>
-				 	<div class="two_forall">
+				 	<div class="two_forall transform">
 				 		<a href="#" class="purpose_item">
-				 			<div class="overlay">
+				 			<div class="purpose_image over_image">
 				 				<img src="img/for_close.jpg" class="responsive" alt="">
 				 			</div>
 				 			Для одежды
 				 		</a>
 				 	</div>
-				 	<div class="two_forall">
+				 	<div class="two_forall transform">
 				 		<a href="#" class="purpose_item">
-				 			<div class="overlay">
+				 			<div class="purpose_image over_image">
 				 				<img src="img/for_galant.jpg" class="responsive" alt="">
 				 			</div>
 				 			Для галантереи
 				 		</a>
 				 	</div>
-				 	<div class="two_forall">
+				 	<div class="two_forall transform">
 				 		<a href="#" class="purpose_item">
-				 			<div class="overlay">
+				 			<div class="purpose_image over_image">
 				 				<img src="img/for_furnute.jpg" class="responsive" alt="">
 				 			</div>
 				 			Для мебели
 				 		</a>
 				 	</div>
-				 	<div class="two_forall">
+				 	<div class="two_forall transform">
 				 		<a href="#" class="purpose_item">
-				 			<div class="overlay">
+				 			<div class="purpose_image over_image">
 				 				<img src="img/for_auto.jpg" class="responsive" alt="">
 				 			</div>
 				 			Для авто
 				 		</a>
 				 	</div>
-				 	<div class="two_forall">
+				 	<div class="two_forall transform">
 				 		<a href="#" class="purpose_item">
-				 			<div class="overlay">
+				 			<div class="purpose_image over_image">
 				 				<img src="img/for_belt.jpg" class="responsive" alt="">
 				 			</div>
 				 			Для ремней
@@ -112,39 +135,55 @@
 			<div class="wrapper">
 				<div class="box">
 					<h2>Консолидация</h2>
-					<p>Slightly finished leather with soft hand and natural, smooth surface. Ideal for a modern and sober design.</p>
-					<a href="#" class="regular_button transition">Посмотреть</a>
+					<div class="flex columns footer_columns">
+						<div class="onetwo">
+							<p>Slightly finished leather with soft hand and natural, smooth surface. Ideal for a modern and sober design.</p>
+							<a href="#" class="regular_button transition">Посмотреть</a>
+						</div>		
+						<div class="onetwo">
+							<div class="over_image footimage">
+								<img src="img/photo3.jpg" class="responsive" alt="">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="gray offet_section">
 			<div class="wrapper">
 				<h2>Новые поступления</h2>
-				<div class="product_card flex columns offset_top">
-					<div class="card_item two_four">
+				<div class="product_card flex columns offset_top new_products">
+					<div class="card_item two_four transform">
 						<a href="#" class="product_url">
-							<div class="product_img"><img src="img/001.jpg" class="responsive" alt=""></div>
+							<div class="product_img over_image"><img src="img/001.jpg" class="responsive" alt=""></div>
 							<div class="product_name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Shark, MASTROTTO, ИТАЛИЯ</div>
 							<div class="product_price little_price">93.74 RUB</div>
 						</a>
 					</div>
-					<div class="card_item two_four">
+					<div class="card_item two_four transform">
 						<a href="#" class="product_url">
-							<div class="product_img"><img src="img/001.jpg" class="responsive" alt=""></div>
+							<div class="product_img over_image"><img src="img/001.jpg" class="responsive" alt=""></div>
 							<div class="product_name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Shark, MASTROTTO, ИТАЛИЯ</div>
 							<div class="product_price little_price">93.74 RUB</div>
 						</a>
 					</div>
-					<div class="card_item two_four">
+					<div class="card_item two_four transform">
 						<a href="#" class="product_url">
-							<div class="product_img"><img src="img/001.jpg" class="responsive" alt=""></div>
+							<div class="product_img over_image"><img src="img/001.jpg" class="responsive" alt=""></div>
 							<div class="product_name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Shark, MASTROTTO, ИТАЛИЯ</div>
 							<div class="product_price little_price">93.74 RUB</div>
 						</a>
 					</div>
-					<div class="card_item two_four">
+					<div class="card_item two_four transform">
 						<a href="#" class="product_url">
-							<div class="product_img"><img src="img/001.jpg" class="responsive" alt=""></div>
+							<div class="product_img over_image"><img src="img/001.jpg" class="responsive" alt=""></div>
+							<div class="product_name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Shark, MASTROTTO, ИТАЛИЯ</div>
+							<div class="product_price little_price">93.74 RUB</div>
+						</a>
+					</div>
+					<div class="card_item two_four transform">
+						<a href="#" class="product_url">
+							<div class="product_img over_image"><img src="img/001.jpg" class="responsive" alt=""></div>
 							<div class="product_name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Shark, MASTROTTO, ИТАЛИЯ</div>
 							<div class="product_price little_price">93.74 RUB</div>
 						</a>
@@ -157,28 +196,28 @@
 				<h2>Примеры работ</h2>
 				<div class="gallery offset_top flex scroll">
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl01.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl01.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl02.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl02.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl03.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl03.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl04.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl04.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl05.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl05.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl06.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl06.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl07.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl07.jpg" class="responsive" alt=""></div>
 					</div>
 					<div class="gallery_item">
-						<div class="overlay"><img src="img/gallery/sl08.jpg" class="responsive" alt=""></div>
+						<div class="gallery_image over_image"><img src="img/gallery/sl08.jpg" class="responsive" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -200,8 +239,8 @@
 							</ul>
 						</div>
 						<div class="onetwo">
-							<div class="over_footimage">
-								<img src="img/photo.jpg" class="responsive" alt="">
+							<div class="over_image footimage">
+								<img src="img/photo3.jpg" class="responsive" alt="">
 							</div>
 						</div>
 					</div>

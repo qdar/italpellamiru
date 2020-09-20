@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
 </head>
 <body>
-	<header class="flex align_vc space_between header_smart">
+	<header class="flex align_vc space_between header_nav header_smart">
 		<div class="it_nav">
 			<div class="it_nav_line"></div>
 		</div>
@@ -45,15 +45,40 @@
 			<img src="img/shopping-cart.svg" height="20" alt="">
 		</div>
 	</header>
+	<header class="align_vc header_nav header_nbook">
+		<div class="wrapper flex">
+			<div class="logo">
+				<img src="img/logo.svg" height="30" alt="">
+			</div>
+			<nav class="main_nav flex space_between">
+				<ul class="menu flex align_vc">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Распрадажа</a></li>
+					<li><a href="#">Консолидация</a></li>
+					<li class="hide_item"><a href="#">Оплата и Доставка</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакы</a></li>
+				</ul>
+				<ul class="shop_icon flex align_vc">
+					<li><a href="#"><img src="img/user.svg" height="20" alt=""></a></li>
+					<li><a href="#"><img src="img/search1.svg" height="20" alt=""></a></li>
+					<li><a href="#"><img src="img/shopping-cart.svg" height="20" alt=""></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<main>
 		<section class="content">
 			<header>
-				<h2>О нас</h2>
-				<div class="breadcrums">
-					<ul class="flex">
-						<li><a href="#">Главная</a></li>
-						<li>О нас</li>
-					</ul>
+				<div class="wrapper">
+					<h2>О нас</h2>
+					<div class="breadcrums">
+						<ul class="flex">
+							<li><a href="#">Главная</a></li>
+							<li>О нас</li>
+						</ul>
+					</div>
 				</div>
 			</header>
 			<article>
@@ -85,8 +110,8 @@
 							</ul>
 						</div>
 						<div class="onetwo">
-							<div class="over_footimage">
-								<img src="img/photo.jpg" class="responsive" alt="">
+							<div class="over_image footimage">
+								<img src="img/photo3.jpg" class="responsive" alt="">
 							</div>
 						</div>
 					</div>
