@@ -4,25 +4,17 @@ $(document).ready(function(){
 		$('body').toggleClass('hidden');
 		e.preventDefault();
 	});
-	$('.scrollto').click(function(e){
-		$('.menu').removeClass('open');
-		$('body').removeClass('hidden');
+	$('.open_bottom').click(function(e){
+		$('.from_bottom').addClass('active');
+    $('body').addClass('hidden');
 		e.preventDefault();
 	});
-	$('.accordion').click(function(e){
-		$(this).toggleClass('open');
-		e.preventDefault();
-	});
-	$('.call').click(function(e){
-		$('.call').toggleClass('hides');
-		$('.mini_popup').toggleClass('show');
-		e.preventDefault();
-	});
-	$('.close_mini').click(function(e){
-		$('.mini_popup').toggleClass('show');
-		$('.call').toggleClass('hides');
-		e.preventDefault();
-	});
+  $('.close_bottom').click(function(e){
+    $('.from_bottom').removeClass('active');
+    $('body').removeClass('hidden');
+    e.preventDefault();
+  });
+
 
   $(".scrollto").click(function() {
     var elementClick = $(this).attr("href")
@@ -82,25 +74,4 @@ $(window).scroll(function(){$(window)
   .addClass("show"):$(".click_call")
   .removeClass("show")
 })
-
-$('.reviews').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  nextArrow: '<img src="img/next.svg" width="20" alt="" />',
-  prevArrow: '<img src="img/prev.svg" width="20" alt="" />',
-});
-
-$(function(){
-  $('.storage').click(function(){
-    $('.storage').toggleClass('active');
-    localStorage.setItem("blockIsActive", "true");
-    var blockIsActive = localStorage.getItem("blockIsActive");
-    if (blockIsActive == "true") {
-        $('.storage').addClass('active');
-    }
-  });
-});
 
