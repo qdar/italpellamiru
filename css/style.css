@@ -55,6 +55,9 @@ footer {
 .flex {
   display: flex;
 }
+.dir_col {
+  flex-direction: column;
+}
 .align_vc {
   align-items: center;
 }
@@ -70,6 +73,9 @@ footer {
 }
 .offset_top {
   margin-top: 25px;
+}
+.offset_b {
+  margin-bottom: 25px;
 }
 section {
   padding-top: 45px;
@@ -95,7 +101,6 @@ h3 {
 a {
   color: #2d2d2d;
   text-decoration: none;
-  position: relative;
 }
 .regular_button {
   padding: 12px 22px;
@@ -408,11 +413,10 @@ main {
 .from_bottom {
   background-color: #fff;
   position: fixed;
-  bottom: -800px;
   left: 0;
   width: 100%;
   height: 80%;
-  padding: 25px;
+  padding: 20px;
   z-index: 1000;
   border-radius: 15px 15px 0 0;
   -webkit-box-shadow: 0 2px 25px rgb(67 67 67 / 25%);
@@ -423,8 +427,14 @@ main {
   -o-transition: bottom 0.3s ease;
   transition: bottom 0.3s ease;
 }
-.from_bottom.active {
+.toggle_one, .toggle_two {
+  bottom: -800px;
+}
+.toggle_one.active, .toggle_two.active {
   bottom: 0;
+}
+.from_bottom h3 {
+  margin: 0;
 }
 .close_bottom {
   background: #f9f9f9;
@@ -479,6 +489,82 @@ main {
 }
 .hide_smart {
   display: none;
+}
+/* product */
+.product_m {
+  height: 50vw;
+  position: relative;
+}
+.over_label {
+  background: #caba9f;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 5px 30px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.img_product img {
+  margin-bottom: 10px;
+}
+.video_product iframe {
+  width: 100%;
+  height: auto;
+}
+.video_bg {
+  position: absolute;
+  top: -80%;
+}
+.name {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.callto {
+  background: #caba9f;
+  border-radius: 6px;
+}
+.itr_price {
+  padding: 4px 20px;
+}
+.itr_btn {
+  padding: 4px 0;
+  width: 95px;
+  background: #23212d;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+}
+.itr_btn a {
+  color: #fff;
+}
+.list li {
+  position: relative;
+  margin-left: 30px;
+}
+.list li::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 12px;
+  width: 15px;
+  height: 1px;
+  background: #2d2d2d;
+}
+.tabs_btn {
+  margin-right: 15px;
+}
+.regular_button.tabs_btn {
+  padding: 4px 0;
+  width: 115px;
+  font-weight: 400;
+}
+.regular_button.tabs_btn.active {
+  background: #23212d;
+  color: #f5f5f5;
+}
+.name + .breadcrums {
+  margin-top: 10px;
 }
 @media (min-width: 600px) {
   .home p {

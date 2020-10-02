@@ -4,11 +4,16 @@ $(document).ready(function(){
 		$('body').toggleClass('hidden');
 		e.preventDefault();
 	});
-	$('.open_bottom').click(function(e){
-		$('.from_bottom').addClass('active');
+	$('.open_one').click(function(e){
+		$('.toggle_one').addClass('active');
     $('body').addClass('hidden');
 		e.preventDefault();
 	});
+  $('.open_two').click(function(e){
+    $('.toggle_two').addClass('active');
+    $('body').addClass('hidden');
+    e.preventDefault();
+  });
   $('.close_bottom').click(function(e){
     $('.from_bottom').removeClass('active');
     $('body').removeClass('hidden');
