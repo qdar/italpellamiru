@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="product">
 	<header class="flex align_vc space_between header_nav header_smart">
 		<div class="it_nav">
 			<div class="it_nav_line"></div>
@@ -68,12 +68,22 @@
 		</div>
 	</header>
 	<main>
-		<section>
+		<section class="offet_section">
 			<div class="wrapper flex dir_col">
 				<div class="product_media">
+					<header class="name_b offset_b">
+						<h2 class="name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Coffee, MASTROTTO, ИТАЛИЯ</h2>
+						<div class="breadcrums">
+							<ul class="flex">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li>Крс</li>
+							</ul>
+						</div>
+					</header>
 					<div class="product_m over_image offset_b">
 						<a href="#" class="open_one">
-							<img src="img/001.jpg" class="responsive" alt="">
+							<img src="img/001.jpg" class="responsive transform" alt="">
 							<div class="over_label">Фотографии</div>
 						</a>
 						<div class="from_bottom toggle_one">
@@ -90,7 +100,7 @@
 					</div>
 					<div class="product_m over_image">
 						<a href="#" class="open_two">
-							<img src="img/001.jpg" class="responsive video_bg" alt="">
+							<img src="img/001.jpg" class="responsive transform video_bg" alt="">
 							<div class="over_label">Видео</div>
 						</a>
 						<div class="from_bottom toggle_two">
@@ -103,20 +113,23 @@
 							</div>
 						</div>
 					</div>
+					<!--
 					<div class="callto offset_top flex align_vc space_between">
 						<div class="itr_price">0.75 EUR <sup>дм2</sup></div>
 						<div class="itr_btn"><a href="#">Хочу!</a></div>
-					</div>
+					</div>-->
 				</div>
 				<div class="product_meta offset_top">
-					<h1 class="name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Coffee, MASTROTTO, ИТАЛИЯ</h1>
-					<div class="breadcrums">
-						<ul class="flex">
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li>Крс</li>
-						</ul>
-					</div>
+					<header class="name_m">
+						<h1 class="name">Кожа КРС, ORLANDOCOLORS, 1,4-1,6 мм, цвет Coffee, MASTROTTO, ИТАЛИЯ</h1>
+						<div class="breadcrums">
+							<ul class="flex">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li>Крс</li>
+							</ul>
+						</div>
+					</header>
 					<div class="tabs">
 						<div class="tab_panel offset_top flex">
 							<a href="#" class="regular_button tabs_btn active">Описание</a>
@@ -128,7 +141,76 @@
 						</div>
 					</div>
 				</div>
-				<div class="product_action"></div>
+				<div class="product_action offset_top">
+					<div class="itr_price"><span>95 ₽ <sup>дм2</sup></span></div>
+					<ul>
+						<li>В наличии</li>
+						<li>Шкуры продаем целиком</li>
+					</ul>
+					<div class="offset_top" id="product">
+
+						<div class="colors offset_small">
+							<a href="#" class="open_color option_btn">Выберите цвет</a>
+							<div class="from_bottom toggle_color">
+								<header class="flex align_vc space_between offset_b">
+									<h3>Цвет</h3>
+									<a href="#" class="close_bottom"></a>
+								</header>
+								<div class="from_bottom_content colors_metro flex columns">
+									<div class="color_item over_image">
+										<img src="img/001.jpg" class="responsive" alt="">
+										<span>Черный</span>
+									</div>
+									<div class="color_item over_image">
+										<img src="img/001.jpg" class="responsive" alt="">
+										<span>Красный</span>
+									</div>
+									<div class="color_item over_image">
+										<img src="img/001.jpg" class="responsive" alt="">
+										<span>Синий</span>
+									</div>
+									<div class="color_item over_image">
+										<img src="img/001.jpg" class="responsive" alt="">
+										<span>Белый</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group required offset_small">
+							<select name="option[217]" id="input-option217" class="form-control select">
+								<option value="">Выберите размер</option>
+								<option value="3">Blue (+$3.60)</option>
+								<option value="1">Green (+$1.20)</option>
+								<option value="2">Yellow (+$2.40)</option>
+							</select>
+						</div>
+					</div>
+					<a href="#" class="regular_button transition">В корзину</a>
+					<div class="add_info offset_top">
+						<div class="info_item flex offset_top">
+							<img src="img/user-bl.svg" height="30" alt="">
+							<div class="info_text">
+								<span class="flex"><b>Самое короткое время отклика</b></span>
+								<span>В течение 30 минут наши менеджеры ответят на вашу заявку</span>
+							</div>	
+						</div>
+						<div class="info_item flex offset_top">
+							<img src="img/user-bl.svg" height="30" alt="">
+							<div class="info_text">
+								<span class="flex"><b>Доставка по РФ и странам СНГ</b></span>
+								<span>Осуществляется ТК СДЭК. Быстро и по приемлемой цене</span>
+							</div>
+						</div>
+						<div class="info_item flex offset_top">
+							<img src="img/user-bl.svg" height="30" alt="">
+							<div class="info_text">
+								<span class="flex"><b>Самые короткие сроки доставки</b></span>
+								<span>В среднем – 3 дня</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="pattern black">

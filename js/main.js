@@ -14,6 +14,11 @@ $(document).ready(function(){
     $('body').addClass('hidden');
     e.preventDefault();
   });
+  $('.open_color').click(function(e){
+    $('.toggle_color').addClass('active');
+    $('body').addClass('hidden');
+    e.preventDefault();
+  });
   $('.close_bottom').click(function(e){
     $('.from_bottom').removeClass('active');
     $('body').removeClass('hidden');
